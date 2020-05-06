@@ -16,5 +16,10 @@ namespace Quiz_1_2
         {
             InitializeComponent();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
