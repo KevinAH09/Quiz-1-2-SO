@@ -83,6 +83,16 @@ namespace Quiz_1_2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CD_rom_26778 {
+            get {
+                object obj = ResourceManager.GetObject("CD_rom_26778", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap computadora {
             get {
                 object obj = ResourceManager.GetObject("computadora", resourceCulture);
@@ -106,6 +116,36 @@ namespace Quiz_1_2.Properties {
         internal static System.Drawing.Bitmap electronica {
             get {
                 object obj = ResourceManager.GetObject("electronica", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap harddiskdrive_hardware_discodur_2522 {
+            get {
+                object obj = ResourceManager.GetObject("harddiskdrive_hardware_discodur_2522", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap harddiskdrive_hardware_discodur_25221 {
+            get {
+                object obj = ResourceManager.GetObject("harddiskdrive_hardware_discodur_25221", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap harddiskdrive_hardware_discodur_25222 {
+            get {
+                object obj = ResourceManager.GetObject("harddiskdrive_hardware_discodur_25222", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +183,69 @@ namespace Quiz_1_2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MemoryModule_icon_icons_com_55230 {
+            get {
+                object obj = ResourceManager.GetObject("MemoryModule_icon-icons.com_55230", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MemoryModule_icon_icons1 {
+            get {
+                object obj = ResourceManager.GetObject("MemoryModule_icon-icons1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap multimedia {
             get {
                 object obj = ResourceManager.GetObject("multimedia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap play_button_icon_icons_com_53922 {
+            get {
+                object obj = ResourceManager.GetObject("play-button_icon-icons.com_53922", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap play_button_icon_icons1 {
+            get {
+                object obj = ResourceManager.GetObject("play-button_icon-icons1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap print_printer_printing_1549 {
+            get {
+                object obj = ResourceManager.GetObject("print_printer_printing_1549", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap print_printer_printing_15491 {
+            get {
+                object obj = ResourceManager.GetObject("print_printer_printing_15491", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +263,49 @@ namespace Quiz_1_2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap scanner_10866 {
+            get {
+                object obj = ResourceManager.GetObject("scanner_10866", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scanner_108661 {
+            get {
+                object obj = ResourceManager.GetObject("scanner_108661", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap seo_social_web_network_internet_09_icon_icons_com_61507 {
             get {
                 object obj = ResourceManager.GetObject("seo-social-web-network-internet_09_icon-icons.com_61507", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap songs_audio_music_6074 {
+            get {
+                object obj = ResourceManager.GetObject("songs_audio_music_6074", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap songs_audio_music_60741 {
+            get {
+                object obj = ResourceManager.GetObject("songs_audio_music_60741", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

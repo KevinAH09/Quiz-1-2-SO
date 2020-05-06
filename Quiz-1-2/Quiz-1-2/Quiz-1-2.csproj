@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harddiskdrive_hardware_discodur_2522.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harddiskdrive_hardware_discodur_25221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoryModule_icon-icons.com_55230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-button_icon-icons.com_53922.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_printer_printing_1549.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scanner_10866.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\songs_audio_music_6074.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harddiskdrive_hardware_discodur_25222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MemoryModule_icon-icons.com_552301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-button_icon-icons.com_539221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_printer_printing_15491.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scanner_108661.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\songs_audio_music_60741.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD_rom_26778.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
