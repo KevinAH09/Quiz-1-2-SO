@@ -55,9 +55,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Proceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TiempoVida = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RecursosAsignados = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,9 +78,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -341,14 +341,6 @@
             this.label12.Size = new System.Drawing.Size(40, 20);
             this.label12.TabIndex = 25;
             // 
-            // form1BindingSource
-            // 
-            this.form1BindingSource.DataSource = typeof(Quiz_1_2.Form1);
-            // 
-            // programBindingSource
-            // 
-            this.programBindingSource.DataSource = typeof(Quiz_1_2.Program);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -366,6 +358,14 @@
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_3);
             // 
+            // form1BindingSource
+            // 
+            this.form1BindingSource.DataSource = typeof(Quiz_1_2.Form1);
+            // 
+            // programBindingSource
+            // 
+            this.programBindingSource.DataSource = typeof(Quiz_1_2.Program);
+            // 
             // Proceso
             // 
             this.Proceso.HeaderText = "Proceso";
@@ -378,13 +378,13 @@
             // 
             // RecursosAsignados
             // 
-            this.RecursosAsignados.HeaderText = "Recursos Asignados";
+            this.RecursosAsignados.HeaderText = "Recursos Asignados  H:R:C:A:S:I";
             this.RecursosAsignados.Name = "RecursosAsignados";
             this.RecursosAsignados.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // RecusosNecesarios
             // 
-            this.RecusosNecesarios.HeaderText = "Recursos Necesarios";
+            this.RecusosNecesarios.HeaderText = "Recursos Necesarios  H:R:C:A:S:I";
             this.RecusosNecesarios.Name = "RecusosNecesarios";
             this.RecusosNecesarios.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
@@ -428,9 +428,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
