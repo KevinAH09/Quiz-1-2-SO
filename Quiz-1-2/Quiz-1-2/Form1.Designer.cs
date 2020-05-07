@@ -56,15 +56,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Proceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TiempoVida = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RecursosAsignados = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RecusosNecesarios = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TiempoInanicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TiempoMaximoInanicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TiempoNuevoRecurso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -234,7 +233,7 @@
             this.flowLayoutPanel2.Controls.Add(this.label12);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(155, 85);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(623, 35);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(645, 27);
             this.flowLayoutPanel2.TabIndex = 3;
             // 
             // label7
@@ -344,19 +343,68 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Proceso,
-            this.TiempoVida,
-            this.RecursosAsignados,
-            this.RecusosNecesarios,
-            this.TiempoInanicion,
-            this.TiempoMaximoInanicion,
-            this.TiempoNuevoRecurso});
-            this.dataGridView1.Location = new System.Drawing.Point(155, 152);
+            this.dataGridView1.Enabled = false;
+            this.dataGridView1.Location = new System.Drawing.Point(1, 156);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(743, 286);
+            this.dataGridView1.Size = new System.Drawing.Size(1018, 319);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_3);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(155, 139);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(48, 13);
+            this.label13.TabIndex = 5;
+            this.label13.Text = "H= HDD";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(267, 139);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(48, 13);
+            this.label14.TabIndex = 6;
+            this.label14.Text = "R= RAM";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(365, 139);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(66, 13);
+            this.label15.TabIndex = 7;
+            this.label15.Text = "C= CD-ROM";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(467, 139);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(57, 13);
+            this.label16.TabIndex = 8;
+            this.label16.Text = "A= AUDIO";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(559, 139);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(74, 13);
+            this.label17.TabIndex = 9;
+            this.label17.Text = "S= ESCANER";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(663, 139);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(83, 13);
+            this.label18.TabIndex = 10;
+            this.label18.Text = "I= IMPRESORA";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // form1BindingSource
             // 
@@ -366,48 +414,17 @@
             // 
             this.programBindingSource.DataSource = typeof(Quiz_1_2.Program);
             // 
-            // Proceso
-            // 
-            this.Proceso.HeaderText = "Proceso";
-            this.Proceso.Name = "Proceso";
-            // 
-            // TiempoVida
-            // 
-            this.TiempoVida.HeaderText = "Tiempo de Vida";
-            this.TiempoVida.Name = "TiempoVida";
-            // 
-            // RecursosAsignados
-            // 
-            this.RecursosAsignados.HeaderText = "Recursos Asignados  H:R:C:A:S:I";
-            this.RecursosAsignados.Name = "RecursosAsignados";
-            this.RecursosAsignados.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // RecusosNecesarios
-            // 
-            this.RecusosNecesarios.HeaderText = "Recursos Necesarios  H:R:C:A:S:I";
-            this.RecusosNecesarios.Name = "RecusosNecesarios";
-            this.RecusosNecesarios.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // TiempoInanicion
-            // 
-            this.TiempoInanicion.HeaderText = "Tiempo de Inanicion";
-            this.TiempoInanicion.Name = "TiempoInanicion";
-            // 
-            // TiempoMaximoInanicion
-            // 
-            this.TiempoMaximoInanicion.HeaderText = "Tiempo Maximo de Inanicion";
-            this.TiempoMaximoInanicion.Name = "TiempoMaximoInanicion";
-            // 
-            // TiempoNuevoRecurso
-            // 
-            this.TiempoNuevoRecurso.HeaderText = "Tiempo de nuevo recurso";
-            this.TiempoNuevoRecurso.Name = "TiempoNuevoRecurso";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 450);
+            this.ClientSize = new System.Drawing.Size(1021, 502);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -432,6 +449,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -466,13 +484,12 @@
         private System.Windows.Forms.BindingSource form1BindingSource;
         private System.Windows.Forms.BindingSource programBindingSource;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Proceso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TiempoVida;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RecursosAsignados;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RecusosNecesarios;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TiempoInanicion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TiempoMaximoInanicion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TiempoNuevoRecurso;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
     }
 }
 

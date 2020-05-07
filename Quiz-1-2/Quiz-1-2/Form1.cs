@@ -12,40 +12,40 @@ namespace Quiz_1_2
 {
     public partial class Form1 : Form
     {
+        
+
         public Form1()
         {
-            Proceso proceso = new Proceso();
-            InitializeComponent();
-
-            string[] row0 = { "1", "29", "2,9,4,5,4,5",
-                            "2,4,5,6,3,5,", " 6" };
-            string[] row1 = {
-                "2", "29","2,9,4,5,4,5",
-                            "2,4,5,6,3,3", " 6" };
-            string[] row2 = {
-                "3", "29", "2,9,4,5,4,5",
-                            "2,4,5,6,3,3", " 6" };
-            string[] row3 = {
-                "4", "29", "2,9,4,5,4,5",
-                            "2,4,5,6,3,2", " 6" };
-            string[] row4 = {
-                "5", "29", "2,9,4,5,4,5",
-                            "2,4,5,6,3,4", " 6" };
-            string[] row5 ={
-                "6", "29","2,9,4,5,4,5",
-                            "2,4,5,6,3,2", " 6" };
-            string[] row6 ={
-                "7", "29","2,9,4,5,4,5",
-                            "2,4,5,6,3,4", " 6" };
-
-            dataGridView1.Rows.Add(row1);
-            dataGridView1.Rows.Add(row2);
-            dataGridView1.Rows.Add(row3);
-            dataGridView1.Rows.Add(row4);
-            dataGridView1.Rows.Add(row5);
-            dataGridView1.Rows.Add(row6);
-
           
+
+
+            InitializeComponent();
+            List<Proceso> procesos = new List<Proceso>();
+            List<int> asignados = new List<int>() { 1, 2, 3, 2, 3, 5 };
+
+            Proceso proceso = new Quiz_1_2.Proceso(1, asignados, 4, 2, asignados, 23);
+
+            procesos.Add(proceso);
+            proceso = new Quiz_1_2.Proceso(2, asignados, 4, 2, asignados, 11);
+
+            procesos.Add(proceso);
+            proceso = new Quiz_1_2.Proceso(4, asignados, 4, 2, asignados, 3);
+
+            procesos.Add(proceso);
+            proceso = new Quiz_1_2.Proceso(5, asignados, 3, 8, asignados, 7);
+
+            procesos.Add(proceso);
+
+            
+            dataGridView1.DataSource = procesos;
+
+            dataGridView1.Columns[0].Width = 100;
+            dataGridView1.Columns[1].Width = 100;
+            dataGridView1.Columns[2].Width = 200;
+            dataGridView1.Columns[3].Width = 200;
+            dataGridView1.Columns[4].Width = 200;
+            dataGridView1.Columns[5].Width = 200;
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -69,6 +69,16 @@ namespace Quiz_1_2
         }
 
         private void dataGridView1_CellContentClick_3(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
         {
 
         }
