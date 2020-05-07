@@ -6,17 +6,21 @@ using System.Threading.Tasks;
 
 namespace Quiz_1_2
 {
-    public class Proceso
+    class Proceso
     {
         int tiempoVida;
-        List<int> recursosNecesarios;
+        public List<int> recursosNecesarios;
         int tiempoInanicion;
         int tiempoNuevoRecurso;
         List<int> recursosAsignados;
         int tiempoMaximooInanicion;
 
+        public Proceso()
+        {
+            
+        }
 
-        public Proceso(int tiempoVida, List<int> recursosNecesarios, int tiempoInanicion, int tiempoNuevoRecurso, List<int> recursosAsignados, int tiempoMaximooInanicion) : this(tiempoVida, recursosNecesarios, tiempoInanicion, tiempoNuevoRecurso, recursosAsignados)
+        public Proceso(int tiempoVida, List<int> recursosNecesarios, int tiempoInanicion, int tiempoNuevoRecurso, List<int> recursosAsignados, int tiempoMaximooInanicion)
         {
             this.tiempoMaximooInanicion = tiempoMaximooInanicion;
             this.tiempoVida = tiempoVida;
@@ -25,5 +29,7 @@ namespace Quiz_1_2
             this.tiempoNuevoRecurso = tiempoNuevoRecurso;
             this.recursosAsignados = recursosAsignados;
         }
+
+
     }
 }
