@@ -12,13 +12,10 @@ namespace Quiz_1_2
 {
     public partial class Form1 : Form
     {
-        
-
+        static System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
+        int n = 0;
         public Form1()
         {
-          
-
-
             InitializeComponent();
             List<Proceso> procesos = new List<Proceso>();
             List<int> asignados = new List<int>() { 1, 2, 3, 2, 3, 5 };
@@ -45,9 +42,20 @@ namespace Quiz_1_2
             dataGridView1.Columns[3].Width = 200;
             dataGridView1.Columns[4].Width = 200;
             dataGridView1.Columns[5].Width = 200;
+            myTimer.Tick += new EventHandler(TimerEventProcessor);
+
+            // Sets the timer interval to 5 seconds.
+            myTimer.Interval = 1000;
+            myTimer.Start();
 
         }
-
+        void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
+        {
+            n++;
+            label10.Text = string.Concat(n);
+            //myTimer.Stop();
+        }
+       
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
