@@ -17,20 +17,26 @@ namespace Quiz_1_2
             Proceso proceso = new Proceso();
             InitializeComponent();
 
-            string[] row0 = { "11/22/1968", "29", "Revolution 9",
-                            "Beatles", "The Beatles [White Album]" };
-            string[] row1 = { "1960", "6", "Fools Rush In",
-        "Frank Sinatra", "Nice 'N' Easy" };
-            string[] row2 = { "11/11/1971", "1", "One of These Days",
-        "Pink Floyd", "Meddle" };
-            string[] row3 = { "1988", "7", "Where Is My Mind?",
-        "Pixies", "Surfer Rosa" };
-            string[] row4 = { "5/1981", "9", "Can't Find My Mind",
-        "Cramps", "Psychedelic Jungle" };
-            string[] row5 = { "6/10/2003", "13",
-        "Scatterbrain. (As Dead As Leaves.)",
-        "Radiohead", "Hail to the Thief" };
-            string[] row6 = { "6/30/1992", "3", "Dress", "P J Harvey", "Dry" };
+            string[] row0 = { "1", "29", "2,9,4,5",
+                            "2,4,5,6,3", " 6" };
+            string[] row1 = {
+                "1", "29", "2,9,4,5",
+                            "2,4,5,6,3", " 6" };
+            string[] row2 = {
+                "1", "29", "2,9,4,5",
+                            "2,4,5,6,3", " 6" };
+            string[] row3 = {
+                "1", "29", "2,9,4,5",
+                            "2,4,5,6,3", " 6" };
+            string[] row4 = {
+                "1", "29", "2,9,4,5",
+                            "2,4,5,6,3", " 6" };
+            string[] row5 ={
+                "1", "29", "2,9,4,5",
+                            "2,4,5,6,3", " 6" };
+            string[] row6 ={
+                "1", "29", "2,9,4,5",
+                            "2,4,5,6,3", " 6" };
 
             dataGridView1.Rows.Add(row1);
             dataGridView1.Rows.Add(row2);
@@ -39,11 +45,7 @@ namespace Quiz_1_2
             dataGridView1.Rows.Add(row5);
             dataGridView1.Rows.Add(row6);
 
-            dataGridView1.Columns[0].DisplayIndex = 3;
-            dataGridView1.Columns[1].DisplayIndex = 4;
-            dataGridView1.Columns[2].DisplayIndex = 0;
-            dataGridView1.Columns[3].DisplayIndex = 1;
-            dataGridView1.Columns[4].DisplayIndex = 2;
+          
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
