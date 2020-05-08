@@ -7,26 +7,27 @@ using System.Windows.Forms;
 
 namespace Quiz_1_2
 {
-    class Proceso : Timer
+    
+    class Proceso 
     {
+        Random r = new Random();
+        private int idProceso;
         private int tiempoVida;
         public List<int> recursosNecesarios;
         private int tiempoInanicion;
         private int tiempoNuevoRecurso;
         public List<int> recursosAsignados;
         private int tiempoMaximooInanicion;
-        Random r = new Random();
-        public Proceso(int maxHDD,int maxRAM,int CDROM, int maxAudio,int maxEscaner,int maxImpresora)
+        
+        public Proceso(int idproceso,int maxHDD,int maxRAM,int CDROM, int maxAudio,int maxEscaner,int maxImpresora)
         {
-            this.Tick += new EventHandler(TimerEventProcessor);
-            this.Interval = 5000;
-            this.tiempoMaximooInanicion = r.Next();
-            this.tiempoVida = r.Next();
+            this.idProceso=idproceso;
+            this.tiempoMaximooInanicion = r.Next(10,100);
+            this.tiempoVida = r.Next(11,100);
             this.recursosNecesarios = new List<int>() { r.Next(maxHDD) , r.Next(maxRAM), r.Next(CDROM), r.Next(maxAudio), r.Next(maxEscaner), r.Next(maxImpresora) };
-            this.tiempoInanicion = r.Next();
-            this.tiempoNuevoRecurso = r.Next();
+            this.tiempoInanicion = r.Next(11,200);
+            this.tiempoNuevoRecurso = r.Next(11,200);
             this.recursosAsignados = new List<int>() { r.Next(maxHDD), r.Next(maxRAM), r.Next(CDROM), r.Next(maxAudio), r.Next(maxEscaner), r.Next(maxImpresora) };
-
 
         }
 
@@ -38,6 +39,10 @@ namespace Quiz_1_2
             this.tiempoInanicion = tiempoInanicion;
             this.tiempoNuevoRecurso = tiempoNuevoRecurso;
             this.recursosAsignados = recursosAsignados;
+        }
+        public int ID_Proceso
+        {
+            get { return idProceso; }
         }
         public int Tiempo_de_Vida
         {
@@ -73,9 +78,7 @@ namespace Quiz_1_2
             get { return tiempoMaximooInanicion; }
 
         }
-        void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
-        {
-            Console.WriteLine("");
-        }
+        
+        
     }
 }
