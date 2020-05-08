@@ -22,7 +22,7 @@ namespace Quiz_1_2
             myTimer.Tick += new EventHandler(TimerEventProcessor);
 
             // Sets the timer interval to 5 seconds.
-            myTimer.Interval = 1000;
+            myTimer.Interval = 5000;
             myTimer.Start();
 
         }

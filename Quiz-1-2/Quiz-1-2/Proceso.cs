@@ -7,17 +7,26 @@ using System.Windows.Forms;
 
 namespace Quiz_1_2
 {
-    class Proceso
+    class Proceso : Timer
     {
         private int tiempoVida;
-        private List<int> recursosNecesarios;
+        public List<int> recursosNecesarios;
         private int tiempoInanicion;
         private int tiempoNuevoRecurso;
-        private List<int> recursosAsignados;
+        public List<int> recursosAsignados;
         private int tiempoMaximooInanicion;
-
-        public Proceso()
+        Random r = new Random();
+        public Proceso(int maxHDD,int maxRAM,int CDROM, int maxAudio,int maxEscaner,int maxImpresora)
         {
+            this.Tick += new EventHandler(TimerEventProcessor);
+            this.Interval = 5000;
+            this.tiempoMaximooInanicion = r.Next();
+            this.tiempoVida = r.Next();
+            this.recursosNecesarios = new List<int>() { r.Next(maxHDD) , r.Next(maxRAM), r.Next(CDROM), r.Next(maxAudio), r.Next(maxEscaner), r.Next(maxImpresora) };
+            this.tiempoInanicion = r.Next();
+            this.tiempoNuevoRecurso = r.Next();
+            this.recursosAsignados = new List<int>() { r.Next(maxHDD), r.Next(maxRAM), r.Next(CDROM), r.Next(maxAudio), r.Next(maxEscaner), r.Next(maxImpresora) };
+
 
         }
 
@@ -63,6 +72,10 @@ namespace Quiz_1_2
             set { tiempoMaximooInanicion = value; }
             get { return tiempoMaximooInanicion; }
 
+        }
+        void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
+        {
+            Console.WriteLine("");
         }
     }
 }
