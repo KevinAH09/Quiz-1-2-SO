@@ -40,8 +40,6 @@ namespace Quiz_1_2
             dataGridView1.Columns[4].Width = 150;
             dataGridView1.Columns[5].Width = 210;
             dataGridView1.Columns[6].Width = 160;
-
-
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
