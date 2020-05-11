@@ -15,12 +15,13 @@ namespace Quiz_1_2
         {
             this.proceso = proceso;
             this.Tick += new EventHandler(TimerEventProcessor);
-            this.Interval = 5000;
+            this.Interval = 1000;
             this.Start();
         }
         private void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
         {
-            this.proceso.Tiempo_de_Vida=this.proceso.Tiempo_de_Vida + 1;
+            
+
         }
     }
 }

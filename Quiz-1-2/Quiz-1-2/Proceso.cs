@@ -76,9 +76,6 @@ namespace Quiz_1_2
         {
             set { tiempoMaximooInanicion = value; }
             get { return tiempoMaximooInanicion; }
-
-        }
-        
-        
+        } 
     }
 }
