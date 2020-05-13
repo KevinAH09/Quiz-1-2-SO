@@ -21,7 +21,6 @@ namespace Quiz_1_2
         private void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
         {
             
-
         }
     }
 }

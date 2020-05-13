@@ -25,9 +25,9 @@ namespace Quiz_1_2
             this.tiempoMaximooInanicion = r.Next(10,100);
             this.tiempoVida = r.Next(11,100);
             this.recursosNecesarios = new List<int>() { r.Next(maxHDD) , r.Next(maxRAM), r.Next(CDROM), r.Next(maxAudio), r.Next(maxEscaner), r.Next(maxImpresora) };
-            this.tiempoInanicion = r.Next(11,200);
-            this.tiempoNuevoRecurso = r.Next(11,200);
-            this.recursosAsignados = new List<int>() { r.Next(maxHDD), r.Next(maxRAM), r.Next(CDROM), r.Next(maxAudio), r.Next(maxEscaner), r.Next(maxImpresora) };
+            this.tiempoInanicion = 0;
+            this.tiempoNuevoRecurso = r.Next(11,this.tiempoVida);
+            this.recursosAsignados = new List<int>() { r.Next(recursosNecesarios[0]), r.Next(recursosNecesarios[1]), r.Next(recursosNecesarios[2]), r.Next(recursosNecesarios[3]), r.Next(recursosNecesarios[4]), r.Next(recursosNecesarios[5]) };
 
         }
 
