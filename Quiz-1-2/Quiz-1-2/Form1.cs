@@ -85,5 +85,10 @@ namespace Quiz_1_2
             myTimer.Interval = 5000;
             myTimer.Start();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
