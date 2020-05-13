@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace Quiz_1_2
 {
     
-    class Proceso 
+    public class Proceso 
     {
         Random r = new Random();
         private int idProceso;
@@ -19,15 +19,15 @@ namespace Quiz_1_2
         public List<int> recursosAsignados;
         private int tiempoMaximooInanicion;
         
-        public Proceso(int idproceso,int maxHDD,int maxRAM,int CDROM, int maxAudio,int maxEscaner,int maxImpresora)
+        public Proceso(int idproceso,int maxHDD,int maxRAM,int CDROM, int maxAudio,int maxEscaner,int maxImpresora, int disHDD, int disRAM, int disCDROM, int disAudio, int disEscaner, int disImpresora)
         {
             this.idProceso=idproceso;
-            this.tiempoMaximooInanicion = r.Next(10,100);
+            this.tiempoMaximooInanicion = r.Next(5,15);
             this.tiempoVida = r.Next(11,100);
             this.recursosNecesarios = new List<int>() { r.Next(maxHDD) , r.Next(maxRAM), r.Next(CDROM), r.Next(maxAudio), r.Next(maxEscaner), r.Next(maxImpresora) };
             this.tiempoInanicion = 0;
             this.tiempoNuevoRecurso = r.Next(11,this.tiempoVida);
-            this.recursosAsignados = new List<int>() { r.Next(recursosNecesarios[0]), r.Next(recursosNecesarios[1]), r.Next(recursosNecesarios[2]), r.Next(recursosNecesarios[3]), r.Next(recursosNecesarios[4]), r.Next(recursosNecesarios[5]) };
+            this.recursosAsignados = new List<int>() { r.Next(disHDD), r.Next(disRAM), r.Next(disCDROM), r.Next(disAudio), r.Next(disEscaner), r.Next(disImpresora) };
 
         }
 
