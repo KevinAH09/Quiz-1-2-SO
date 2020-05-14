@@ -65,9 +65,100 @@ namespace Quiz_1_2
                         {
                             this.proceso.recursosAsignados[0] += dif;
                             dis -= dif;
+                            this.hdd.Text=(string.Concat(dis));
+                        }
+                        else
+                        {
+                            this.proceso.recursosAsignados[0] += dis;
+                            dis = 0;
+                            this.hdd.Text = (string.Concat(dis));
                         }
                     }
-
+                    dis = int.Parse(this.rom.Text);
+                    dif = this.proceso.recursosNecesarios[1] - this.proceso.recursosAsignados[1];
+                    if (dif >= 0)
+                    {
+                        if (dif <= dis)
+                        {
+                            this.proceso.recursosAsignados[1] += dif;
+                            dis -= dif;
+                            this.rom.Text = (string.Concat(dis));
+                        }
+                        else
+                        {
+                            this.proceso.recursosAsignados[1] += dis;
+                            dis = 0;
+                            this.rom.Text = (string.Concat(dis));
+                        }
+                    }
+                    dis = int.Parse(this.cd.Text);
+                    dif = this.proceso.recursosNecesarios[2] - this.proceso.recursosAsignados[2];
+                    if (dif >= 0)
+                    {
+                        if (dif <= dis)
+                        {
+                            this.proceso.recursosAsignados[2] += dif;
+                            dis -= dif;
+                            this.cd.Text = (string.Concat(dis));
+                        }
+                        else
+                        {
+                            this.proceso.recursosAsignados[2] += dis;
+                            dis = 0;
+                            this.cd.Text = (string.Concat(dis));
+                        }
+                    }
+                    dis = int.Parse(this.audio.Text);
+                    dif = this.proceso.recursosNecesarios[3] - this.proceso.recursosAsignados[3];
+                    if (dif >= 0)
+                    {
+                        if (dif <= dis)
+                        {
+                            this.proceso.recursosAsignados[3] += dif;
+                            dis -= dif;
+                            this.audio.Text = (string.Concat(dis));
+                        }
+                        else
+                        {
+                            this.proceso.recursosAsignados[3] += dis;
+                            dis = 0;
+                            this.audio.Text = (string.Concat(dis));
+                        }
+                    }
+                    dis = int.Parse(this.scaner.Text);
+                    dif = this.proceso.recursosNecesarios[4] - this.proceso.recursosAsignados[4];
+                    if (dif >= 0)
+                    {
+                        if (dif <= dis)
+                        {
+                            this.proceso.recursosAsignados[4] += dif;
+                            dis -= dif;
+                            this.scaner.Text = (string.Concat(dis));
+                        }
+                        else
+                        {
+                            this.proceso.recursosAsignados[4] += dis;
+                            dis = 0;
+                            this.scaner.Text = (string.Concat(dis));
+                        }
+                    }
+                    dis = int.Parse(this.impresora.Text);
+                    dif = this.proceso.recursosNecesarios[5] - this.proceso.recursosAsignados[4];
+                    if (dif >= 0)
+                    {
+                        if (dif <= dis)
+                        {
+                            this.proceso.recursosAsignados[5] += dif;
+                            dis -= dif;
+                            this.impresora.Text = (string.Concat(dis));
+                        }
+                        else
+                        {
+                            this.proceso.recursosAsignados[5] += dis;
+                            dis = 0;
+                            this.impresora.Text = (string.Concat(dis));
+                        }
+                    }
                 }
                 Form1.cerrojo = true;
             }
