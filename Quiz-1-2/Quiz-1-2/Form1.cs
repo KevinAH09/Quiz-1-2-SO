@@ -13,6 +13,7 @@ namespace Quiz_1_2
     public partial class Form1 : Form
     {
         static System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
+        public static bool cerrojo=true;
         public static List<Proceso> procesos = new List<Proceso>();
         List<HiloProceso> Hilosprocesos = new List<HiloProceso>();
         List<int> asignados = new List<int>() { 1, 2, 3, 2, 3, 5 };
@@ -21,34 +22,35 @@ namespace Quiz_1_2
         public Form1()
         {
             InitializeComponent();
-           
-
         }
         void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
         {
-
-            idProcesosCreados++;
-            Proceso proceso = new Proceso(idProcesosCreados,int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text), int.Parse(textBox4.Text), int.Parse(textBox5.Text), int.Parse(textBox6.Text), int.Parse(textBox7.Text), int.Parse(textBox8.Text), int.Parse(textBox9.Text), int.Parse(textBox10.Text), int.Parse(textBox11.Text), int.Parse(textBox12.Text));
-            
-            textBox7.Text =  string.Concat(int.Parse(textBox7.Text) - proceso.recursosAsignados[0]);
-            textBox8.Text = string.Concat(int.Parse(textBox8.Text) - proceso.recursosAsignados[1]);
-            textBox9.Text = string.Concat(int.Parse(textBox9.Text) - proceso.recursosAsignados[2]);
-            textBox10.Text = string.Concat(int.Parse(textBox10.Text) - proceso.recursosAsignados[3]);
-            textBox11.Text = string.Concat(int.Parse(textBox11.Text) - proceso.recursosAsignados[4]);
-            textBox12.Text = string.Concat(int.Parse(textBox12.Text) - proceso.recursosAsignados[5]);
-            procesos.Add(proceso);
-            Hilosprocesos.Add(new HiloProceso(proceso,textBox7,textBox8,textBox9,textBox10,textBox11,textBox12));
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource = procesos;
-            dataGridView1.Columns[0].Width = 100;
-            dataGridView1.Columns[1].Width = 110;
-            dataGridView1.Columns[2].Width = 110;
-            dataGridView1.Columns[3].Width = 210;
-            dataGridView1.Columns[4].Width = 150;
-            dataGridView1.Columns[5].Width = 210;
-            dataGridView1.Columns[6].Width = 160;
+            if (cerrojo)
+            {
+                cerrojo = false;
+                idProcesosCreados++;
+                Proceso proceso = new Proceso(idProcesosCreados, int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text), int.Parse(textBox4.Text), int.Parse(textBox5.Text), int.Parse(textBox6.Text), int.Parse(textBox7.Text), int.Parse(textBox8.Text), int.Parse(textBox9.Text), int.Parse(textBox10.Text), int.Parse(textBox11.Text), int.Parse(textBox12.Text));
+                textBox7.Text = string.Concat(int.Parse(textBox7.Text) - proceso.recursosAsignados[0]);
+                textBox8.Text = string.Concat(int.Parse(textBox8.Text) - proceso.recursosAsignados[1]);
+                textBox9.Text = string.Concat(int.Parse(textBox9.Text) - proceso.recursosAsignados[2]);
+                textBox10.Text = string.Concat(int.Parse(textBox10.Text) - proceso.recursosAsignados[3]);
+                textBox11.Text = string.Concat(int.Parse(textBox11.Text) - proceso.recursosAsignados[4]);
+                textBox12.Text = string.Concat(int.Parse(textBox12.Text) - proceso.recursosAsignados[5]);
+                procesos.Add(proceso);
+                Hilosprocesos.Add(new HiloProceso(proceso, textBox7, textBox8, textBox9, textBox10, textBox11, textBox12));
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = procesos;
+                dataGridView1.Columns[0].Width = 100;
+                dataGridView1.Columns[1].Width = 110;
+                dataGridView1.Columns[2].Width = 110;
+                dataGridView1.Columns[3].Width = 210;
+                dataGridView1.Columns[4].Width = 150;
+                dataGridView1.Columns[5].Width = 210;
+                dataGridView1.Columns[6].Width = 160;
+                cerrojo = true;
+            }
         }
-
+        
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 

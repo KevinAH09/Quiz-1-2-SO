@@ -9,6 +9,7 @@ namespace Quiz_1_2
 {
     class HiloProceso : Timer
     {
+        Timer nuevosRecursos;
         Proceso proceso;
         TextBox hdd;
         TextBox rom;
@@ -29,15 +30,18 @@ namespace Quiz_1_2
             this.Tick += new EventHandler(TimerEventProcessor);
             this.Interval = 1000;
             this.Start();
+            this.nuevosRecursos.Tick +=  new EventHandler(VerificacionDeNuevoRecursos);
+            this.nuevosRecursos.Interval = proceso.Tiempo_Nuevo_Recurso;
+            this.Start();
+            
         }
         private void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
         {
-
             if (this.proceso.Tiempo_Inanicion < this.proceso.Tiempo_Maximoo_de_Inanicion)
             {
                 this.proceso.Tiempo_Inanicion++;
             }
-            else
+            else if (this.proceso.Tiempo_Inanicion >= this.proceso.Tiempo_Maximoo_de_Inanicion)
             {
                 this.hdd.Text = string.Concat(int.Parse(this.hdd.Text) + this.proceso.recursosAsignados[0]);
                 this.rom.Text = string.Concat(int.Parse(this.rom.Text) + this.proceso.recursosAsignados[1]);
@@ -48,6 +52,30 @@ namespace Quiz_1_2
                 Form1.procesos.Remove(this.proceso);
                 this.Stop();
             }
+            if (Form1.cerrojo)
+            {
+                Form1.cerrojo = false;
+                if (int.Parse(this.hdd.Text)>=0)
+                {
+                    int dis = int.Parse(this.hdd.Text);
+                    int dif = this.proceso.recursosNecesarios[0] - this.proceso.recursosAsignados[0];
+                    if (dif >= 0)
+                    {
+                        if (dif <= dis)
+                        {
+                            this.proceso.recursosAsignados[0] += dif;
+                            dis -= dif;
+                        }
+                    }
+
+                }
+                Form1.cerrojo = true;
+            }
+            
+        }
+        private void VerificacionDeNuevoRecursos(Object myObject, EventArgs myEventArgs)
+        {
+
         }
     }
 }
