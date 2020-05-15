@@ -39,7 +39,7 @@ namespace Quiz_1_2
         }
         private void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
         {
-            if (Form1.cerrojo)
+             if (Form1.cerrojo)
             {
                 Form1.cerrojo = false;
                 if (this.proceso.Tiempo_Inanicion < this.proceso.Tiempo_Maximoo_de_Inanicion)
