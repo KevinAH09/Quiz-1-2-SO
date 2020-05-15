@@ -37,7 +37,7 @@ namespace Quiz_1_2
                 textBox11.Text = string.Concat(int.Parse(textBox11.Text) - proceso.recursosAsignados[4]);
                 textBox12.Text = string.Concat(int.Parse(textBox12.Text) - proceso.recursosAsignados[5]);
                 procesos.Add(proceso);
-                Hilosprocesos.Add(new HiloProceso(proceso, textBox7, textBox8, textBox9, textBox10, textBox11, textBox12));
+                Hilosprocesos.Add(new HiloProceso(proceso, dataGridView1, textBox7, textBox8, textBox9, textBox10, textBox11, textBox12));
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = procesos;
                 dataGridView1.Columns[0].Width = 100;
@@ -98,7 +98,7 @@ namespace Quiz_1_2
             myTimer.Tick += new EventHandler(TimerEventProcessor);
 
             // Sets the timer interval to 5 seconds.
-            myTimer.Interval = 5000;
+            myTimer.Interval = 10000;
             myTimer.Start();
         }
 

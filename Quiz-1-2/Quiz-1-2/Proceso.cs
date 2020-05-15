@@ -22,12 +22,69 @@ namespace Quiz_1_2
         public Proceso(int idproceso,int maxHDD,int maxRAM,int CDROM, int maxAudio,int maxEscaner,int maxImpresora, int disHDD, int disRAM, int disCDROM, int disAudio, int disEscaner, int disImpresora)
         {
             this.idProceso=idproceso;
-            this.tiempoMaximooInanicion = r.Next(5,100);
-            this.tiempoVida = r.Next(20,500);
+            this.tiempoMaximooInanicion = r.Next(5,20);
+            this.tiempoVida = r.Next(30,500);
             this.recursosNecesarios = new List<int>() { r.Next(maxHDD) , r.Next(maxRAM), r.Next(CDROM), r.Next(maxAudio), r.Next(maxEscaner), r.Next(maxImpresora) };
             this.tiempoInanicion = 0;
             this.tiempoNuevoRecurso = r.Next(30,this.tiempoVida);
-            this.recursosAsignados = new List<int>() { r.Next(disHDD), r.Next(disRAM), r.Next(disCDROM), r.Next(disAudio), r.Next(disEscaner), r.Next(disImpresora) };
+            this.recursosAsignados = new List<int>() { 0,0,0,0,0,0 };
+            if(this.recursosNecesarios[0]> disHDD){
+                this.recursosAsignados[0] = r.Next(disHDD);
+            }
+            else
+            {
+                this.recursosAsignados[0] = r.Next(this.recursosNecesarios[0]);
+            }
+
+
+            if (this.recursosNecesarios[1] > disRAM)
+            {
+                this.recursosAsignados[1] = r.Next(disRAM);
+            }
+            else
+            {
+                this.recursosAsignados[1] = r.Next(this.recursosNecesarios[1]);
+            }
+
+
+            if (this.recursosNecesarios[2] > disCDROM)
+            {
+                this.recursosAsignados[2] = r.Next(disCDROM);
+            }
+            else
+            {
+                this.recursosAsignados[2] = r.Next(this.recursosNecesarios[2]);
+            }
+
+
+            if (this.recursosNecesarios[3] > disAudio)
+            {
+                this.recursosAsignados[3] = r.Next(disAudio);
+            }
+            else
+            {
+                this.recursosAsignados[3] = r.Next(this.recursosNecesarios[3]);
+            }
+
+
+            if (this.recursosNecesarios[4] > disEscaner)
+            {
+                this.recursosAsignados[4] = r.Next(disEscaner);
+            }
+            else
+            {
+                this.recursosAsignados[4] = r.Next(this.recursosNecesarios[4]);
+            }
+
+
+            if (this.recursosNecesarios[5] > disImpresora)
+            {
+                this.recursosAsignados[5] = r.Next(disImpresora);
+            }
+            else
+            {
+                this.recursosAsignados[5] = r.Next(this.recursosNecesarios[5]);
+            }
 
         }
 
