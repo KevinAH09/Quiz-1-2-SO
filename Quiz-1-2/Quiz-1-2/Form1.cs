@@ -12,6 +12,12 @@ namespace Quiz_1_2
 {
     public partial class Form1 : Form
     {
+        static public int hddMAx;
+        static public int ramMAx;
+        static public int cdMAx;
+        static public int audioMAx;
+        static public int scanerMAx;
+        static public int impresoraMAx;
         static System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
         public static bool cerrojo=true;
         public static List<Proceso> procesos = new List<Proceso>();
@@ -29,7 +35,7 @@ namespace Quiz_1_2
             {
                 cerrojo = false;
                 idProcesosCreados++;
-                Proceso proceso = new Proceso(idProcesosCreados, int.Parse(textBox1.Text), int.Parse(textBox2.Text), int.Parse(textBox3.Text), int.Parse(textBox4.Text), int.Parse(textBox5.Text), int.Parse(textBox6.Text), int.Parse(textBox7.Text), int.Parse(textBox8.Text), int.Parse(textBox9.Text), int.Parse(textBox10.Text), int.Parse(textBox11.Text), int.Parse(textBox12.Text));
+                Proceso proceso = new Proceso(idProcesosCreados, int.Parse(textBox7.Text), int.Parse(textBox8.Text), int.Parse(textBox9.Text), int.Parse(textBox10.Text), int.Parse(textBox11.Text), int.Parse(textBox12.Text));
                 textBox7.Text = string.Concat(int.Parse(textBox7.Text) - proceso.recursosAsignados[0]);
                 textBox8.Text = string.Concat(int.Parse(textBox8.Text) - proceso.recursosAsignados[1]);
                 textBox9.Text = string.Concat(int.Parse(textBox9.Text) - proceso.recursosAsignados[2]);
@@ -88,12 +94,24 @@ namespace Quiz_1_2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            textBox1.Enabled = false;
+            textBox2.Enabled = false;
+            textBox3.Enabled = false;
+            textBox4.Enabled = false;
+            textBox5.Enabled = false;
+            textBox6.Enabled = false;
             textBox7.Text = textBox1.Text;
             textBox8.Text = textBox2.Text;
             textBox9.Text = textBox3.Text;
             textBox10.Text = textBox4.Text;
             textBox11.Text = textBox5.Text;
             textBox12.Text = textBox6.Text;
+            hddMAx = int.Parse(textBox1.Text);
+            ramMAx = int.Parse(textBox2.Text);
+            cdMAx = int.Parse(textBox3.Text);
+            audioMAx = int.Parse(textBox4.Text);
+            scanerMAx = int.Parse(textBox5.Text);
+            impresoraMAx = int.Parse(textBox6.Text);
 
             myTimer.Tick += new EventHandler(TimerEventProcessor);
 

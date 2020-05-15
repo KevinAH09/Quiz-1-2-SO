@@ -19,14 +19,14 @@ namespace Quiz_1_2
         public List<int> recursosAsignados;
         private int tiempoMaximooInanicion;
         
-        public Proceso(int idproceso,int maxHDD,int maxRAM,int CDROM, int maxAudio,int maxEscaner,int maxImpresora, int disHDD, int disRAM, int disCDROM, int disAudio, int disEscaner, int disImpresora)
+        public Proceso(int idproceso, int disHDD, int disRAM, int disCDROM, int disAudio, int disEscaner, int disImpresora)
         {
             this.idProceso=idproceso;
-            this.tiempoMaximooInanicion = r.Next(5,20);
-            this.tiempoVida = r.Next(30,500);
-            this.recursosNecesarios = new List<int>() { r.Next(maxHDD) , r.Next(maxRAM), r.Next(CDROM), r.Next(maxAudio), r.Next(maxEscaner), r.Next(maxImpresora) };
+            this.tiempoMaximooInanicion = r.Next(10,30);
+            this.tiempoVida = r.Next(5,20);
+            this.recursosNecesarios = new List<int>() { r.Next(Form1.hddMAx) , r.Next(Form1.ramMAx), r.Next(Form1.cdMAx), r.Next(Form1.audioMAx), r.Next(Form1.scanerMAx), r.Next(Form1.impresoraMAx) };
             this.tiempoInanicion = 0;
-            this.tiempoNuevoRecurso = r.Next(30,this.tiempoVida);
+            this.tiempoNuevoRecurso = r.Next(5,this.tiempoVida);
             this.recursosAsignados = new List<int>() { 0,0,0,0,0,0 };
             if(this.recursosNecesarios[0]> disHDD){
                 this.recursosAsignados[0] = r.Next(disHDD);
