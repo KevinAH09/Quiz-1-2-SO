@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +13,7 @@ namespace Quiz_1_2
 {
     public partial class Form1 : Form
     {
+        public static SoundPlayer sonidoIntro;
         static public int hddMAx;
         static public int ramMAx;
         static public int cdMAx;
@@ -19,6 +21,7 @@ namespace Quiz_1_2
         static public int scanerMAx;
         static public int impresoraMAx;
         static System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
+        static System.Windows.Forms.Timer bloqueo = new System.Windows.Forms.Timer();
         public static bool cerrojo=true;
         public static List<Proceso> procesos = new List<Proceso>();
         List<HiloProceso> Hilosprocesos = new List<HiloProceso>();
@@ -28,6 +31,11 @@ namespace Quiz_1_2
         public Form1()
         {
             InitializeComponent();
+            panel1.BackColor = Color.Blue;
+            pictureBox11.Visible = false;
+            sonidoIntro = new SoundPlayer(Application.StartupPath + @"\sonido\bloqueo.wav");
+            sonidoIntro.Load();
+
         }
         void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
         {
@@ -56,8 +64,24 @@ namespace Quiz_1_2
                 cerrojo = true;
             }
         }
-        
-        private void groupBox1_Enter(object sender, EventArgs e)
+        void TimerEventBloqueo(Object myObject, EventArgs myEventArgs)
+        {
+            if (textBox7.Text == "0" && textBox8.Text == "0" && textBox9.Text == "0" && textBox10.Text == "0" && textBox11.Text == "0" && textBox12.Text == "0")
+            {
+                panel1.BackColor = Color.Red;
+                sonidoIntro.Play();
+                pictureBox11.Visible = true;
+                
+            }
+            else
+            {
+                panel1.BackColor = Color.Blue;
+                sonidoIntro.Stop();
+                pictureBox11.Visible = false;
+            }
+        }
+
+            private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
@@ -118,6 +142,12 @@ namespace Quiz_1_2
             // Sets the timer interval to 5 seconds.
             myTimer.Interval = 10000;
             myTimer.Start();
+
+            bloqueo.Tick += new EventHandler(TimerEventBloqueo);
+
+            // Sets the timer interval to 5 seconds.
+            bloqueo.Interval = 100;
+            bloqueo.Start();
         }
 
         private void Form1_Load(object sender, EventArgs e)

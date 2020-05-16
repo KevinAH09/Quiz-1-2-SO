@@ -118,32 +118,26 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="memoria-ram" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\memoria-ram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="scanner_10866" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\scanner_10866.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="play-button_icon-icons.com_53922" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\play-button_icon-icons.com_53922.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="harddiskdrive_hardware_discodur_25222" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\harddiskdrive_hardware_discodur_25222.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="print_printer_printing_1549" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\print_printer_printing_1549.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CD_rom_26778" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CD_rom_26778.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="harddiskdrive_hardware_discodur_25221" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\harddiskdrive_hardware_discodur_25221.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="play-button_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\play-button_icon-icons.com_539221.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MemoryModule_icon-icons.com_55230" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoryModule_icon-icons.com_55230.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="computadora (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\computadora (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="scanner_10866" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scanner_10866.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="scanner_108661" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\scanner_108661.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MemoryModule_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MemoryModule_icon-icons.com_552301.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="songs_audio_music_6074" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\songs_audio_music_6074.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="memoria-ram (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\memoria-ram (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,29 +145,35 @@
   <data name="tecnologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tecnologia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="print_printer_printing_15491" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\print_printer_printing_15491.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="computadora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\computadora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Audio_icon-icons.com_71845" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Audio_icon-icons.com_71845.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="computadora (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\computadora (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="computadora" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\computadora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="multimedia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\multimedia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scanner_108661" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scanner_108661.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="memoria-ram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\memoria-ram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="botonPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botonPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="printer_78936" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\printer_78936.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MemoryModule_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoryModule_icon-icons.com_552301.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MemoryModule_icon-icons.com_55230" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MemoryModule_icon-icons.com_55230.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="play-button_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play-button_icon-icons.com_539221.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="harddiskdrive_hardware_discodur_2522" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\harddiskdrive_hardware_discodur_2522.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="play-button_icon-icons.com_53922" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play-button_icon-icons.com_53922.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="electronica" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\electronica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,16 +184,19 @@
   <data name="songs_audio_music_60741" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\songs_audio_music_60741.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="print_printer_printing_1549" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\print_printer_printing_1549.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="printer_78936" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\printer_78936.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="songs_audio_music_6074" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\songs_audio_music_6074.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Audio_icon-icons.com_71845" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Audio_icon-icons.com_71845.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="multimedia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\multimedia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="print_printer_printing_15491" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\print_printer_printing_15491.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CD_rom_26778" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CD_rom_26778.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="harddiskdrive_hardware_discodur_2522" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\harddiskdrive_hardware_discodur_2522.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tenor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tenor.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

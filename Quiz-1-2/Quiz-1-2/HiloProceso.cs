@@ -9,6 +9,7 @@ namespace Quiz_1_2
 {
     class HiloProceso : Timer
     {
+        System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
         Random r = new Random();
         DataGridView lisgrip;
         Proceso proceso;
@@ -19,8 +20,8 @@ namespace Quiz_1_2
         TextBox impresora;
         TextBox cd;
         bool estadoProceso;
-
-        public HiloProceso(Proceso proceso, DataGridView data,TextBox h, TextBox r, TextBox c, TextBox a, TextBox s, TextBox i)
+        List<int>listcero = new List<int>() { 0, 0, 0, 0, 0, 0 };
+    public HiloProceso(Proceso proceso, DataGridView data,TextBox h, TextBox r, TextBox c, TextBox a, TextBox s, TextBox i)
         {
             lisgrip = data;
             this.hdd = h;
@@ -34,7 +35,6 @@ namespace Quiz_1_2
             this.Tick += new EventHandler(TimerEventProcessor);
             this.Interval = 1000;
             this.Start();
-            System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
             myTimer.Tick += new EventHandler(VerificacionDeNuevoRecursos);
             myTimer.Interval = proceso.Tiempo_Nuevo_Recurso*1000;
             myTimer.Start();
@@ -59,6 +59,9 @@ namespace Quiz_1_2
                         this.audio.Text = string.Concat(int.Parse(this.audio.Text) + this.proceso.recursosAsignados[3]);
                         this.scaner.Text = string.Concat(int.Parse(this.scaner.Text) + this.proceso.recursosAsignados[4]);
                         this.impresora.Text = string.Concat(int.Parse(this.impresora.Text) + this.proceso.recursosAsignados[5]);
+                        this.proceso.recursosAsignados = new List<int>() { 0, 0, 0, 0, 0, 0 };
+                        this.proceso.recursosNecesarios = new List<int>() { 0, 0, 0, 0, 0, 0 };
+                        myTimer.Stop();
                         Form1.procesos.Remove(this.proceso);
 
                         this.Stop();
@@ -200,21 +203,23 @@ namespace Quiz_1_2
                     lisgrip.Columns[4].Width = 150;
                     lisgrip.Columns[5].Width = 210;
                     lisgrip.Columns[6].Width = 160;
+                    if (this.proceso.recursosAsignados.SequenceEqual(this.proceso.recursosNecesarios) && !this.proceso.recursosNecesarios.SequenceEqual(listcero))
+                    {
+                        this.hdd.Text = string.Concat(int.Parse(this.hdd.Text) + this.proceso.recursosAsignados[0]);
+                        this.rom.Text = string.Concat(int.Parse(this.rom.Text) + this.proceso.recursosAsignados[1]);
+                        this.cd.Text = string.Concat(int.Parse(this.cd.Text) + this.proceso.recursosAsignados[2]);
+                        this.audio.Text = string.Concat(int.Parse(this.audio.Text) + this.proceso.recursosAsignados[3]);
+                        this.scaner.Text = string.Concat(int.Parse(this.scaner.Text) + this.proceso.recursosAsignados[4]);
+                        this.impresora.Text = string.Concat(int.Parse(this.impresora.Text) + this.proceso.recursosAsignados[5]);
+                        this.proceso.recursosAsignados = new List<int>() { 0, 0, 0, 0, 0, 0 };
+                        this.proceso.recursosNecesarios = new List<int>() { 0, 0, 0, 0, 0, 0 };
+                        this.proceso.Tiempo_Inanicion = 0;
+                        estadoProceso = true;
+                    }
                 }
+
+               
                 
-                if(this.proceso.recursosAsignados.SequenceEqual(this.proceso.recursosNecesarios))
-                {
-                    this.hdd.Text = string.Concat(int.Parse(this.hdd.Text) + this.proceso.recursosAsignados[0]);
-                    this.rom.Text = string.Concat(int.Parse(this.rom.Text) + this.proceso.recursosAsignados[1]);
-                    this.cd.Text = string.Concat(int.Parse(this.cd.Text) + this.proceso.recursosAsignados[2]);
-                    this.audio.Text = string.Concat(int.Parse(this.audio.Text) + this.proceso.recursosAsignados[3]);
-                    this.scaner.Text = string.Concat(int.Parse(this.scaner.Text) + this.proceso.recursosAsignados[4]);
-                    this.impresora.Text = string.Concat(int.Parse(this.impresora.Text) + this.proceso.recursosAsignados[5]);
-                    this.proceso.recursosAsignados = new List<int>() { 0, 0, 0, 0, 0, 0 };
-                    this.proceso.recursosNecesarios = new List<int>() { 0, 0, 0, 0, 0, 0 };
-                    this.proceso.Tiempo_Inanicion = 0;
-                    estadoProceso = true;
-                }
                 Form1.cerrojo = true;
             } 
         }
@@ -300,6 +305,7 @@ namespace Quiz_1_2
                 this.audio.Text = string.Concat(int.Parse(audio.Text) - this.proceso.recursosAsignados[3]);
                 this.scaner.Text = string.Concat(int.Parse(scaner.Text) - this.proceso.recursosAsignados[4]);
                 this.impresora.Text = string.Concat(int.Parse(impresora.Text) - this.proceso.recursosAsignados[5]);
+                estadoProceso = false;
                 Form1.cerrojo = true;
             }
         }

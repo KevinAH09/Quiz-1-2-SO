@@ -28,7 +28,9 @@ namespace Quiz_1_2
             this.tiempoInanicion = 0;
             this.tiempoNuevoRecurso = r.Next(5,this.tiempoVida);
             this.recursosAsignados = new List<int>() { 0,0,0,0,0,0 };
+
             if(this.recursosNecesarios[0]> disHDD){
+
                 this.recursosAsignados[0] = r.Next(disHDD);
             }
             else
