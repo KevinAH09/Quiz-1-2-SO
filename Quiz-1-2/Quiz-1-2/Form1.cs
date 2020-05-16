@@ -13,6 +13,7 @@ namespace Quiz_1_2
 {
     public partial class Form1 : Form
     {
+        bool bloq = true;
         public static SoundPlayer sonidoIntro;
         static public int hddMAx;
         static public int ramMAx;
@@ -64,13 +65,18 @@ namespace Quiz_1_2
                 cerrojo = true;
             }
         }
+        
         void TimerEventBloqueo(Object myObject, EventArgs myEventArgs)
         {
             if (textBox7.Text == "0" && textBox8.Text == "0" && textBox9.Text == "0" && textBox10.Text == "0" && textBox11.Text == "0" && textBox12.Text == "0")
             {
                 panel1.BackColor = Color.Red;
-                sonidoIntro.Play();
-                pictureBox11.Visible = true;
+                if (bloq)
+                {
+                    sonidoIntro.Play();
+                    pictureBox11.Visible = true;
+                    bloq = false;
+                }
                 
             }
             else
@@ -78,6 +84,7 @@ namespace Quiz_1_2
                 panel1.BackColor = Color.Blue;
                 sonidoIntro.Stop();
                 pictureBox11.Visible = false;
+                bloq = true;
             }
         }
 
