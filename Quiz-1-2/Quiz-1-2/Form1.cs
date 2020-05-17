@@ -125,36 +125,39 @@ namespace Quiz_1_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Enabled = false;
-            textBox2.Enabled = false;
-            textBox3.Enabled = false;
-            textBox4.Enabled = false;
-            textBox5.Enabled = false;
-            textBox6.Enabled = false;
-            textBox7.Text = textBox1.Text;
-            textBox8.Text = textBox2.Text;
-            textBox9.Text = textBox3.Text;
-            textBox10.Text = textBox4.Text;
-            textBox11.Text = textBox5.Text;
-            textBox12.Text = textBox6.Text;
-            hddMAx = int.Parse(textBox1.Text);
-            ramMAx = int.Parse(textBox2.Text);
-            cdMAx = int.Parse(textBox3.Text);
-            audioMAx = int.Parse(textBox4.Text);
-            scanerMAx = int.Parse(textBox5.Text);
-            impresoraMAx = int.Parse(textBox6.Text);
+            if (textBox1.Text.Length != 0 && textBox2.Text.Length != 0 && textBox3.Text.Length != 0 && textBox4.Text.Length != 0 && textBox5.Text.Length != 0 && textBox6.Text.Length != 0)
+            {
+                textBox1.Enabled = false;
+                textBox2.Enabled = false;
+                textBox3.Enabled = false;
+                textBox4.Enabled = false;
+                textBox5.Enabled = false;
+                textBox6.Enabled = false;
+                textBox7.Text = textBox1.Text;
+                textBox8.Text = textBox2.Text;
+                textBox9.Text = textBox3.Text;
+                textBox10.Text = textBox4.Text;
+                textBox11.Text = textBox5.Text;
+                textBox12.Text = textBox6.Text;
+                hddMAx = int.Parse(textBox1.Text);
+                ramMAx = int.Parse(textBox2.Text);
+                cdMAx = int.Parse(textBox3.Text);
+                audioMAx = int.Parse(textBox4.Text);
+                scanerMAx = int.Parse(textBox5.Text);
+                impresoraMAx = int.Parse(textBox6.Text);
 
-            myTimer.Tick += new EventHandler(TimerEventProcessor);
+                myTimer.Tick += new EventHandler(TimerEventProcessor);
 
-            // Sets the timer interval to 5 seconds.
-            myTimer.Interval = 10000;
-            myTimer.Start();
+                // Sets the timer interval to 5 seconds.
+                myTimer.Interval = 10000;
+                myTimer.Start();
 
-            bloqueo.Tick += new EventHandler(TimerEventBloqueo);
+                bloqueo.Tick += new EventHandler(TimerEventBloqueo);
 
-            // Sets the timer interval to 5 seconds.
-            bloqueo.Interval = 100;
-            bloqueo.Start();
+                // Sets the timer interval to 5 seconds.
+                bloqueo.Interval = 100;
+                bloqueo.Start();
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)

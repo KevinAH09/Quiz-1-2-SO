@@ -63,6 +63,16 @@ namespace Quiz_1_2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3681691 {
+            get {
+                object obj = ResourceManager.GetObject("3681691", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Audio_icon_icons_com_71845 {
             get {
                 object obj = ResourceManager.GetObject("Audio_icon-icons.com_71845", resourceCulture);
@@ -116,6 +126,16 @@ namespace Quiz_1_2.Properties {
         internal static System.Drawing.Bitmap electronica {
             get {
                 object obj = ResourceManager.GetObject("electronica", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondo1 {
+            get {
+                object obj = ResourceManager.GetObject("fondo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
