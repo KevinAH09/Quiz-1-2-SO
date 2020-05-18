@@ -310,7 +310,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.ShowCellErrors = false;
             this.dataGridView1.ShowRowErrors = false;
-            this.dataGridView1.Size = new System.Drawing.Size(1122, 688);
+            this.dataGridView1.Size = new System.Drawing.Size(1122, 500);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_3);
             // 
@@ -634,7 +634,7 @@
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Location = new System.Drawing.Point(22, 155);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1128, 694);
+            this.panel1.Size = new System.Drawing.Size(1128, 506);
             this.panel1.TabIndex = 59;
             // 
             // pictureBox11
@@ -662,7 +662,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Quiz_1_2.Properties.Resources._3681691;
-            this.ClientSize = new System.Drawing.Size(1186, 861);
+            this.ClientSize = new System.Drawing.Size(1174, 681);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox12);
