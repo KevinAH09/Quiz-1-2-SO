@@ -18,3 +18,12 @@ C:\Users\andre\Desktop\TareaSO\Quiz-1-2-SO\Quiz-1-2\Quiz-1-2\obj\Debug\Quiz-1-2.
 C:\Users\andre\Desktop\TareaSO\Quiz-1-2-SO\Quiz-1-2\Quiz-1-2\obj\Debug\Quiz-1-2.csproj.CoreCompileInputs.cache
 C:\Users\andre\Desktop\TareaSO\Quiz-1-2-SO\Quiz-1-2\Quiz-1-2\obj\Debug\Quiz-1-2.exe
 C:\Users\andre\Desktop\TareaSO\Quiz-1-2-SO\Quiz-1-2\Quiz-1-2\obj\Debug\Quiz-1-2.pdb
+C:\Users\Bosco\Desktop\Quiz 1y2\Quiz-1-2-SO\Quiz-1-2\Quiz-1-2\bin\Debug\Quiz-1-2.exe.config
+C:\Users\Bosco\Desktop\Quiz 1y2\Quiz-1-2-SO\Quiz-1-2\Quiz-1-2\bin\Debug\Quiz-1-2.exe
+C:\Users\Bosco\Desktop\Quiz 1y2\Quiz-1-2-SO\Quiz-1-2\Quiz-1-2\bin\Debug\Quiz-1-2.pdb
+C:\Users\Bosco\Desktop\Quiz 1y2\Quiz-1-2-SO\Quiz-1-2\Quiz-1-2\obj\Debug\Quiz-1-2.csprojAssemblyReference.cache
+C:\Users\Bosco\Desktop\Quiz 1y2\Quiz-1-2-SO\Quiz-1-2\Quiz-1-2\obj\Debug\Quiz_1_2.Form1.resources
+C:\Users\Bosco\Desktop\Quiz 1y2\Quiz-1-2-SO\Quiz-1-2\Quiz-1-2\obj\Debug\Quiz_1_2.Properties.Resources.resources
+C:\Users\Bosco\Desktop\Quiz 1y2\Quiz-1-2-SO\Quiz-1-2\Quiz-1-2\obj\Debug\Quiz-1-2.csproj.GenerateResource.cache
+C:\Users\Bosco\Desktop\Quiz 1y2\Quiz-1-2-SO\Quiz-1-2\Quiz-1-2\obj\Debug\Quiz-1-2.exe
+C:\Users\Bosco\Desktop\Quiz 1y2\Quiz-1-2-SO\Quiz-1-2\Quiz-1-2\obj\Debug\Quiz-1-2.pdb
